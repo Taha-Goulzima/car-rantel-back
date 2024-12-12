@@ -47,6 +47,9 @@ const locationSchema = new mongoose.Schema({
         maxlength: 50,
         trim: true
     },
+    price:{
+        type:Number,
+    },
     cin: {
         type: String,
         required: true,
@@ -68,6 +71,7 @@ const locationSchema = new mongoose.Schema({
         maxlength: 100,
         trim: true
     }
+    
 }, {
     timestamps: true 
 });
